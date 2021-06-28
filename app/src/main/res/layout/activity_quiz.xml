@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:padding="16dp"
+    android:background="@color/black_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/quiz_current_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question: 1/10"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:foreground="@color/blue_color"
+            />
+
+
+        <TextView
+            android:id="@+id/quiz_question_text"
+            android:text="question !!!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingBottom="24dp"
+            android:layout_marginTop="32dp"/>
+
+        <RadioGroup
+            android:id="@+id/quiz_choices_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <RadioButton
+                android:id="@+id/quiz_choice_1"
+                android:text="choice1"
+                style="@style/RadioButtonStyle"
+                android:buttonTint="@color/blue_color"
+                android:layout_marginTop="16dp"
+               />
+
+            <RadioButton
+                android:id="@+id/quiz_choice_2"
+                style="@style/RadioButtonStyle"
+                android:text="choice2"
+                android:buttonTint="@color/blue_color"
+                android:layout_marginTop="16dp"
+                />
+
+            <RadioButton
+                android:id="@+id/quiz_choice_3"
+                style="@style/RadioButtonStyle"
+                android:text="choice3"
+                android:buttonTint="@color/blue_color"
+                android:layout_marginTop="16dp"
+                />
+
+
+            <RadioButton
+                android:id="@+id/quiz_choice_4"
+                style="@style/RadioButtonStyle"
+                android:text="choice4"
+                android:buttonTint="@color/blue_color"
+                android:layout_marginTop="16dp"
+               />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/quiz_next_button"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:text="next"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button"/>
+
+</RelativeLayout>
